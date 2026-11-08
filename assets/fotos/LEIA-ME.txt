@@ -1,0 +1,3 @@
+Coloque aqui as fotos da churrascaria (jpg, png ou webp).
+Depois cadastre cada uma no painel (admin.html), em "Fotos".
+Dica: reduza para até 1600 px de largura antes de subir.
