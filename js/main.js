@@ -45,7 +45,8 @@
     fb: SV + ' width="26" height="26"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg>',
     link: SV + ' width="26" height="26"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>',
     copy: SV + ' width="18" height="18"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>',
-    wa: SV + ' width="20" height="20"><path d="M4 20l1.2-4.1A8 8 0 1 1 8.2 19z"/><path d="M9 9.5c.3 2 2.5 4.2 4.5 4.5l1.2-1.2-1.8-1-.8.6c-.8-.3-1.6-1.1-1.9-1.9l.6-.8-1-1.8z" fill="currentColor" stroke="none"/></svg>',
+    wa: SV + ' width="20" height="20"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.2c-.4 0-.8.3-1 .7-.3.8 0 1.9.9 3.2 1 1.4 2.3 2.4 3.6 2.8.6.2 1.2.1 1.6-.4l.3-.5c.1-.2 0-.4-.2-.5l-1.4-.7c-.2-.1-.4 0-.5.1l-.5.6c-1-.4-2-1.4-2.4-2.4l.5-.5c.1-.1.2-.3.1-.5L9.5 8.5c-.1-.2-.3-.3-.5-.3z" fill="currentColor" stroke="none"/></svg>',
+    waFill: '<svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32"><path fill="#fff" d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z"/><path fill="#25D366" d="M9 8.2c-.4 0-.8.3-1 .7-.3.8 0 1.9.9 3.2 1 1.4 2.3 2.4 3.6 2.8.6.2 1.2.1 1.6-.4l.3-.5c.1-.2 0-.4-.2-.5l-1.4-.7c-.2-.1-.4 0-.5.1l-.5.6c-1-.4-2-1.4-2.4-2.4l.5-.5c.1-.1.2-.3.1-.5L9.5 8.5c-.1-.2-.3-.3-.5-.3z"/></svg>',
     out: SV + ' width="16" height="16"><path d="M7 17L17 7M9 7h8v8"/></svg>'
   };
 
@@ -138,7 +139,7 @@
     h += '<footer class="foot"><div class="wrap foot-in">' + logoImg() + '<p>© ' + new Date().getFullYear() + ' ' + esc(s.footerText) + ' <a class="adm-link" href="admin.html" rel="nofollow">Admin</a></p></div></footer>';
 
     if (wa && s.whatsapp.floating) {
-      h += '<a class="btn btn-wa wa-fab" href="' + esc(wa) + '" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">' + I.wa + 'WhatsApp</a>';
+      h += '<a class="btn btn-wa wa-fab" href="' + esc(wa) + '" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp" title="Chamar no WhatsApp">' + I.waFill + '</a>';
     }
 
     $('#app').innerHTML = h;

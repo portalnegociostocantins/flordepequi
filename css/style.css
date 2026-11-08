@@ -139,10 +139,13 @@ h2{margin:0;font:400 clamp(30px,4.5vw,48px)/1.1 var(--font-display);text-wrap:ba
 .notice-in{padding-block:9px}
 .notice a{color:inherit;text-underline-offset:3px}
 
-/* WhatsApp */
-.btn-wa{background:#25D366;color:#0B2E17}
-.btn-wa:hover{background:#4BE384}
-.wa-fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;box-shadow:0 8px 24px rgba(0,0,0,.5);border-radius:999px;padding-inline:18px}
+/* WhatsApp: verde #25D366, botão em pílula e botão flutuante redondo */
+.btn-wa{background:#25D366;color:#06180D;border-radius:999px;min-height:54px;padding:0 26px;font-size:16px;border-color:#25D366}
+.btn-wa:hover{background:#3BE077;border-color:#3BE077}
+.cta .btn{border-radius:999px;min-height:54px;padding-inline:26px;font-size:16px}
+.wa-fab{position:fixed;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;min-height:0;padding:0;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(37,211,102,.35),0 4px 14px rgba(0,0,0,.45);transition:transform .15s}
+.wa-fab:hover{background:#25D366;transform:scale(1.06)}
+@media (prefers-reduced-motion:reduce){.wa-fab{transition:none}.wa-fab:hover{transform:none}}
 
 /* listas de apps e lojas */
 .apps a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border-bottom:2px solid transparent}
